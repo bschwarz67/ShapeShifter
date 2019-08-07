@@ -5,7 +5,7 @@
 using namespace std;
 
 
-/*initialized the size of the puzzle, creates a vector of shapes to generate the puzzle with*/
+/*initialize the size of the puzzle, creates a vector of shapes to generate the puzzle with*/
 puzzleGenerator::puzzleGenerator(int rowCol) : shapes(11) {
 	
 	string row(rowCol, '0');
@@ -95,6 +95,7 @@ void puzzleGenerator::generate() {
 				}
 			}
 		}
+		/*store shapes that have been used to make the puzzle in a vector to pass to the solver*/
 		usedShapes.push_back(shapes[shapeIndex]);
 	
 
@@ -104,6 +105,8 @@ void puzzleGenerator::generate() {
 
 
 }
+
+/* getter for shape and puzzle to allow the information to be passed to objects of the puzzleSolver class */
 
 vector<string> puzzleGenerator::getPuzzle() {
 	return puzzleGrid;

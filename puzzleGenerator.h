@@ -1,7 +1,7 @@
 /*
 	Header file for puzzleGenerator class. This is used to generate a rowCol x rowCol puzzle that is represented by a vector of strings.
-	Shapes are applied at psuedo-random quantity, position to a blank (zeroed) puzzle in order to create a puzzle problem for user/algorith
-	to solve.
+	Shapes, represented by a vector of vectors of strings, are applied in psuedo-random quantity, position to a blank (zeroed) puzzle in 
+	order to create a puzzle problem for user/algorithm to solve.
 */
 
 #include <string>
