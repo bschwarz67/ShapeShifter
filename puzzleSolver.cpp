@@ -81,8 +81,6 @@ void puzzleSolver::solve(int index) {
 					/*if solve returns, one or more puzzle pieces has been used incorrectly, so reverse the original play of
 					the piece at this index and try again*/
 					play(shapes[index], j, i);
-					cout << "index " << index << endl;
-					cout << i << " " << j << endl;
 				}
 			}
 		}
