@@ -24,21 +24,5 @@ Startup/desting:
 . make
 . ./client
 
-Output should be successive bitmatrices separated by two newlines, last bitmatrix should be all ones. There is no specific output as the problems are generated psuedo randomly.
-
-example output, truncated:
-
-1101
-1001
-1111
-0001
-
-1001
-0101
-0011
-1111
-
-1111
-1111
-1111
-1111
+Output should be successive bitmatrices separated by two newlines, last bitmatrix should be all ones. 
+There is no specific output as the problems are generated psuedo randomly.
