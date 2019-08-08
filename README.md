@@ -19,13 +19,16 @@ Two classes were created, a puzzleGenerator class to randomly generate a puzzle 
 and a puzzleSolver class, which solves the problem with said pieces. The puzzleSolver class contains a recursive method that
 will solve the puzzle. A client is uses these two classes to demonstrate their functionality.
 
-Startup/desting:
-. Fork/download the repo
-. make
-. ./client
+Startup/desting:  
+. Fork/download the repo  
+. make  
+. ./client  
 
 Output should be successive bitmatrices separated by two newlines, last bitmatrix should be all ones. 
 There is no specific output as the problems are generated psuedo randomly.
+
+Example output:  
+
 1101  
 1001  
 1111  
@@ -40,4 +43,3 @@ There is no specific output as the problems are generated psuedo randomly.
 1111  
 1111  
 1111  
-<h1>hi</h1>
