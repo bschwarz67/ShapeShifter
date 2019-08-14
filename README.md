@@ -2,7 +2,7 @@
 
 Background: 
 
-This small project was doone in place of lab 9 for Computer Science 140 at UTK, the labs of which I am doing independently.
+This small project was done in place of lab 9 for Computer Science 140 at UTK, the labs of which I am doing independently.
 I have created a separate project because I did not have access to the program to generate random puzzles to solve with a recursive algorithm.
 This program was provided by the course on a private server, thus I had to make my own puzzle generator, giving me the idea to make
 a completely separate project.
