@@ -1,4 +1,4 @@
-# shapeShifter
+# ShapeShifter
 
 Background: 
 
