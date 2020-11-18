@@ -1,7 +1,7 @@
 #include "puzzleGenerator.h"
 #include "puzzleSolver.h"
 using namespace std;
-
+//
 
 int main() {
 	puzzleGenerator p(4);
