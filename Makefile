@@ -1,14 +1,14 @@
 all: client
 
-client: client.o puzzleGenerator.o puzzleSolver.o
-	g++ -o client client.o puzzleGenerator.o puzzleSolver.o
+client: client.o PuzzleGenerator.o PuzzleSolver.o
+	g++ -o client client.o PuzzleGenerator.o PuzzleSolver.o
 	rm *.o
 
 client.o: client.cpp
 	g++ -c client.cpp
 
-puzzleGenerator.o: puzzleGenerator.cpp
-	g++ -c puzzleGenerator.cpp
+PuzzleGenerator.o: PuzzleGenerator.cpp
+	g++ -c PuzzleGenerator.cpp
 
-puzzleSolver.o: puzzleSolver.cpp
-	g++ -c puzzleSolver.cpp
+PuzzleSolver.o: PuzzleSolver.cpp
+	g++ -c PuzzleSolver.cpp

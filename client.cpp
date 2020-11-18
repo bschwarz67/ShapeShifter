@@ -1,12 +1,11 @@
-#include "puzzleGenerator.h"
-#include "puzzleSolver.h"
+#include "PuzzleGenerator.h"
+#include "PuzzleSolver.h"
 using namespace std;
-//
 
 int main() {
-	puzzleGenerator p(4);
+	PuzzleGenerator p(4);
 	p.generate();
-	puzzleSolver s(p.getPuzzle(), p.getShapes());
+	PuzzleSolver s(p.getPuzzle(), p.getShapes());
 	s.solve(0);
 	return 0;
 }

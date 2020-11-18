@@ -1,4 +1,4 @@
-#include "puzzleSolver.h"
+#include "PuzzleSolver.h"
 #include<vector>
 #include<string>
 #include<iostream>
@@ -6,8 +6,8 @@ using namespace std;
 
 typedef vector<string> shape;
 
-/*initialize puzzleSolver object to have a puzzle to solve and a vector of shapes used to solve the puzzle with*/
-puzzleSolver::puzzleSolver(vector<string> puzzleGrid, vector<shape> shapes){
+/*initialize PuzzleSolver object to have a puzzle to solve and a vector of shapes used to solve the puzzle with*/
+PuzzleSolver::PuzzleSolver(vector<string> puzzleGrid, vector<shape> shapes){
 
 
 		this->shapes = shapes;	
@@ -16,7 +16,7 @@ puzzleSolver::puzzleSolver(vector<string> puzzleGrid, vector<shape> shapes){
 
 /*check to see if character at every index in the puzzle, represented by a vector of strings, is '1'. If so the puzzle is solved,
 return true. else return false.*/
-bool puzzleSolver::checkPuzzle() {
+bool PuzzleSolver::checkPuzzle() {
 	for(int i = 0; i < puzzleGrid.size(); i++) {
 		for(int j = 0; j < puzzleGrid[0].size(); j++) {
 			if(puzzleGrid[i][j] == '0') {
@@ -29,7 +29,7 @@ bool puzzleSolver::checkPuzzle() {
 
 
 /*apply a single piece to the puzzle at the coordinates designated.*/
-void puzzleSolver::play(shape piece, int xCoord, int yCoord) {		
+void PuzzleSolver::play(shape piece, int xCoord, int yCoord) {		
 	
 	/*check each index of the piece and the corresponding index of the puzzle, if character at both is '1', change the puzzle 
 	index to '0'. if shape index is '1' and puzzle index is '0' change puzzle index to '1'.*/
@@ -47,7 +47,7 @@ void puzzleSolver::play(shape piece, int xCoord, int yCoord) {
 }
 
 /*recursive function to solve puzzle with given shapes*/
-void puzzleSolver::solve(int index) {
+void PuzzleSolver::solve(int index) {
 	/*once all shapes have been used, check to see if puzzle is solved. If not, return*/
 	if(index == shapes.size()) {
 		if(checkPuzzle()) {

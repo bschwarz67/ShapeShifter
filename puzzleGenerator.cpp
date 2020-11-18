@@ -1,12 +1,12 @@
 #include <vector>
 #include <string>
-#include "puzzleGenerator.h"
+#include "PuzzleGenerator.h"
 #include <iostream>
 using namespace std;
 
 
 /*initialize the size of the puzzle, creates a vector of shapes to generate the puzzle with*/
-puzzleGenerator::puzzleGenerator(int rowCol) : shapes(11) {
+PuzzleGenerator::PuzzleGenerator(int rowCol) : shapes(11) {
 	
 	string row(rowCol, '0');
 
@@ -56,7 +56,7 @@ puzzleGenerator::puzzleGenerator(int rowCol) : shapes(11) {
 }
 
 /*Creates a puzzle*/
-void puzzleGenerator::generate() {
+void PuzzleGenerator::generate() {
 	int numberOfPieces, shapeIndex, xCoord, yCoord;
 	srand(time(NULL));
 
@@ -106,12 +106,12 @@ void puzzleGenerator::generate() {
 
 }
 
-/* getter for shape and puzzle to allow the information to be passed to objects of the puzzleSolver class */
+/* getter for shape and puzzle to allow the information to be passed to objects of the PuzzleSolver class */
 
-vector<string> puzzleGenerator::getPuzzle() {
+vector<string> PuzzleGenerator::getPuzzle() {
 	return puzzleGrid;
 }
 
-vector<shape> puzzleGenerator::getShapes() {
+vector<shape> PuzzleGenerator::getShapes() {
 	return usedShapes;
 }

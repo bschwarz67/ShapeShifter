@@ -1,5 +1,5 @@
 /*
-	Header file for puzzleGenerator class. This is used to generate a rowCol x rowCol puzzle that is represented by a vector of strings.
+	Header file for PuzzleGenerator class. This is used to generate a rowCol x rowCol puzzle that is represented by a vector of strings.
 	Shapes, represented by a vector of vectors of strings, are applied in psuedo-random quantity, position to a blank (zeroed) puzzle in 
 	order to create a puzzle problem for user/algorithm to solve.
 */
@@ -12,10 +12,10 @@ using namespace std;
 typedef vector<string> shape;
 
 
-class puzzleGenerator {
+class PuzzleGenerator {
 	
 	public:
-		puzzleGenerator(int rowCol);
+		PuzzleGenerator(int rowCol);
 		void generate();
 		vector<string> getPuzzle();
 		vector<shape> getShapes();	
