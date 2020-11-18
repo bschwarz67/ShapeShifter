@@ -2,7 +2,7 @@
 
 Background: 
 
-This small project was doone in place of lab 9 for Computer Science 140 at UTK, the labs of which I am doing independently.
+This small project was done in place of lab 9 for Computer Science 140 at UTK, the labs of which I am doing independently.
 I have created a separate project because I did not have access to the program to generate random puzzles to solve with a recursive algorithm.
 This program was provided by the course on a private server, thus I had to make my own puzzle generator, giving me the idea to make
 a completely separate project.
@@ -19,10 +19,9 @@ Two classes were created, a puzzleGenerator class to randomly generate a puzzle 
 and a puzzleSolver class, which solves the problem with said pieces. The puzzleSolver class contains a recursive method that
 will solve the puzzle. A client is uses these two classes to demonstrate their functionality.
 
-Startup/desting:  
-. Fork/download the repo  
-. make  
-. ./client  
+Startup/testing:  
+make  
+./client  
 
 Output should be successive bitmatrices separated by two newlines, last bitmatrix should be all ones. 
 There is no specific output as the problems are generated psuedo randomly.
